@@ -10,8 +10,69 @@
     <title>Travel App</title>
 </head>
 
-<body>
-    <p class="font-Montserrat">hello</p>
-    <div class="w-64 h-64 bg-primary"></div>
+<body class="font-Montserrat">
+    <header>
+        <nav></nav>
+        <div id="tab_bar"></div>
+    </header>
+    <main>
+        <section class="w-full h-screen ">
+            <div class="w-full h-3/4" id="home">
+                <div class="w-full h-full bg-cover bg-center bg-dosReyes" >
+                    <div class="w-full h-full p-5 flex flex-col justify-between items-center" >
+                        <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="Los dos reyes"  type="search" name="" id="">
+                        <button class="w-48 rounded-full text-xl font-semibold p-4 shadow-sm text-primary bg-white transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
+                            Explorar
+                        </button>
+                    </div>   
+                </div>
+            </div>
+            <div class="p-6"  id="recomendados">
+                <p class="text-3xl font-semibold text-primary">Recomendados</p>
+                <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+                    <div class="card">
+                        <div class="card_image bg-lothlorien"></div>
+                        <div class="card_info bg-secondary ">
+                            <p class="text-white text-bold text-xl">Lothlorien</p>
+                            <p class="text-white text-medium">Los elfos del bosque</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_image bg-gondor"></div>
+                        <div class="card_info bg-white ">
+                            <p class="text-secondary text-bold text-xl">Gondor</p>
+                            <p class="text-secondary text-medium">La ciudad blanca</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_image bg-hobbitTown"></div>
+                        <div class="card_info bg-secondary ">
+                            <p class="text-white text-bold text-xl">Hobbiton</p>
+                            <p class="text-white text-medium">Paz hogareño</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_image bg-moria"></div>
+                        <div class="card_info bg-white ">
+                            <p class="text-secondary text-bold text-xl">Moria</p>
+                            <p class="text-secondary text-medium">Antiguas ruinas enanas</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_image bg-edorasRohan"></div>
+                        <div class="card_info bg-secondary ">
+                            <p class="text-white text-bold text-xl">Edoras</p>
+                            <p class="text-white text-medium">La ciudad de caballos</p>
+                        </div>
+                    </div>
+               
+                </div>
+            </div>
+            <div id="rentas destacadas"></div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

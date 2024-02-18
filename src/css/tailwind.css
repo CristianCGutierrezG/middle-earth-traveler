@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card{
+    @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-2 hover:shadow-xl 
+}
+
+.card_image{
+    @apply w-full h-3/5 bg-cover bg-center rounded-t-lg
+}
+
+.card_info{
+    @apply w-full h-2/5 px-4 py-2 rounded-b-lg
+}
