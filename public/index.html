@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,11 @@
 <body class="font-Montserrat">
     <header>
         <nav></nav>
-        <div id="tab_bar"></div>
+        
     </header>
     <main>
-        <section class="w-full h-screen ">
-            <div class="w-full h-3/4" id="home">
+        <section class="w-full h-auto ">
+            <div class="w-full h-96" id="home">
                 <div class="w-full h-full bg-cover bg-center bg-dosReyes" >
                     <div class="w-full h-full p-5 flex flex-col justify-between items-center" >
                         <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="Los dos reyes"  type="search" name="" id="">
@@ -68,11 +68,84 @@
                
                 </div>
             </div>
-            <div id="rentas destacadas"></div>
+            <div class="px-2 h-auto w-full" id="rentas_destacadas">
+                <p class="text-3xl text-primary font-semibold pb-6 mt-6">Rentas Destacadas</p>
+                <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
+                    <div class="w-full h-96  bg-cover  rounded-xl bg-mordor">
+                        <p class="cardTitle">Mordor</p>
+                        <p class="text-sm pl-8 text-white mr-24">Multiples habitaciones compartidas, Buena seguridad</p>
+                    </div>
+                    <div class="w-full h-96  bg-cover bg-center rounded-xl bg-abismoHell">
+                        <p class="cardTitle">Abismo de Hell</p>
+                        <p class="text-sm pl-8 text-white mr-24">Estancias acogedoras, gran espacio recreativo</p>
+                    </div>
+                    <div class="w-full h-96 bg-cover bg-center rounded-xl bg-cienagaMuertos">
+                        <p class="cardTitle">Cinaga de los muertos</p>
+                        <p class="text-sm pl-8 text-white mr-24 ">Gran espacio, vistas y vecinos poco acogedores</p>
+                    </div>
+                    <div class="w-full h-96 bg-cover bg-center rounded-xl bg-erebor">
+                        <p class="cardTitle">Erebor</p>
+                        <p class="text-sm pl-8 text-white mr-24 ">Grandes riquezas, escamas por todas partes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-full" id="faqs">
+                <div class="w-full h-full px-6 flex flex-col space-y-4">
+                    <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
+                    <div>
+                        <p class="text-xl font-medium text-primary">Politica de cancelación</p>
+                        <p class="text-md pt-2">Para estancias menores a una semana o distancias mayores a 2 años</p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-medium text-primary">Devoluciones</p>
+                        <p class="text-md pt-2">Por mordeduras de duendes del 20%, ataques de nazgul 50%, decapitaciones o laceraciones consulte su seguro</p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-medium text-primary">Transporte</p>
+                        <p class="text-md pt-2">Para viaje mayores a un mes se incluye un pony o caballo pequello</p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-medium text-primary">Robo</p>
+                        <p class="text-md pt-2">El hospedaje no se hace responsable de sus objetos pesonales, eso incluye anillos magicos</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="w-full h-64 bg-tertiary p-6 mt-3 space-y-2">
+        <p class="text-lg  text-primary">Acerca de</p>
+        <p class="text-sm text-secondary">Inversionistas</p>
+        <p class="text-sm text-secondary">Empleos</p>
+        <p class="text-sm text-secondary">Terminos y condiciones</p>
+        <p class="text-sm text-secondary">Travel.mordor</p>
     </footer>
+    <div class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex justify-center items-center space-x-8" id="tab_bar">
+        <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path class="fill-current text-tertiary" d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                <path class="fill-current text-tertiary" d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+            </svg>
+        </a>
+        <a href="#rentas_destacadas">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path class="fill-current text-primary" fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
+            </svg>          
+        </a>
+        <a href="#recomendados">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path class="fill-current text-tertiary" d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+            </svg>
+        </a>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path class="fill-current text-tertiary" fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
+            </svg>              
+        </button> 
+        <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path class="fill-current text-tertiary" fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+            </svg>
+        </a> 
+    </div>
 </body>
 </html>

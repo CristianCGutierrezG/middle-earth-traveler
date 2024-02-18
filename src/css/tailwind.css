@@ -13,3 +13,7 @@
 .card_info{
     @apply w-full h-2/5 px-4 py-2 rounded-b-lg
 }
+
+.cardTitle{
+    @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
+}
