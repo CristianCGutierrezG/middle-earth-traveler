@@ -2,7 +2,7 @@
 module.exports = {
   darkMode: 'class',
   content: 
-  ['./public/index.html', './src/**/*.{html,js}'],
+  ['index.html', './src/**/*.{html,js}'],
   theme: {
     colors: {
       'primary':"#2B5A4A",
@@ -33,7 +33,7 @@ module.exports = {
     extend: {
       backgroundImage:{
           'dosReyes' : "url('../img/Losdosreyes.jpg')",
-          'abismoHell' : "url('../img/abismoHell.jpg')",
+          'abismoHell' : "url('../img/abismoHell.jpg')", 
           'cienagaMuertos' : "url('../img/Cienaga.jpg')",
           'edorasRohan' : "url('../img/edorasRohan.png')",
           'darkForest' : "url('../img/DarkForest.jpeg')",
